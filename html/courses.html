@@ -1,30 +1,181 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<link rel="icon" href="../images/icon.png" type="image/x-icon">
-    <style>
-      table{
-        margin-left: auto;
-        margin-right: auto;
-      }
-      th, td {
-        background-color: #FF6B6B;
-        border: 1px solid black;
-        border-radius: 10px;
-      }
+<head>
+    <title>CodeBliss Learning</title>
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <style media="screen">
+        .topnav {
+            overflow: hidden;
+            background-color: #fffffa;
+            font-family: calibri;
+        }
+
+        .topnav a {
+            float: left;
+            font-size:18px;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            background-color: lighblue;
+            font-family: calibri;
+        }
+
+        #footer {
+            background-color: #333f;
+            padding: 5px;
+            font-family: calibri;
+        }
+
+        .inner {
+            font-family: calibri;
+            color: white;
+            text-align: center;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        header {
+            background-image: url('../images/courses.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 45%;
+            font-size: 15px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .register-button {
+            position: center;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #333;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .register-button:hover {
+            background-color: white;
+        }
+	.registration-form-container {
+            text-align: left;
+            margin-top: 5px;
+	    width:1000px;
+        }
+
+        .registration-form {
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 50px;
+	    width: 50%;
+	    font-family:calibri;
+	    font-size: 18px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="submit"],
+        .registration-form select {
+            width: 85%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            font-size: 16px;
+        }
+
+        .registration-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .registration-form input[type="submit"]:hover {
+            background-color: #fff;
+	    color: #333;
+        }
+	.card1 {
+            width: 5%;
+            font-size: 15px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+	table, th, td {
+  	    border: 1px solid white;
+  	    border-collapse: collapse;
+	    font-size: 20px;
+	}
+	th, td {
+            background-color: #B2BEB5;
+	}
     </style>
-		<title>Courses</title>
-	</head>
-	<body>
-    <h4 style="font-family:calibri;">Welcome to our Courses page, where you can explore
+</head>
+<body>
+<!--top navigation bar-->
+<div class="topnav" style="color:#333a;">
+    <a href="index.html">Home</a>
+    <a href="">Courses</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</div>
+<!--header-->
+<header>
+    <div style="text-align: center;">
+        <p style="font-family:calibri; font-size:20px;">---"Unlock Your Coding Potential with CodeBliss Learning"---</p>
+	<h3 style="font-family:calibri; font-size:60px;">Courses</h3>
+    </div>
+</header>
+    <p style="font-family:calibri; font-size:20px; text-align:center;">Welcome to our Courses page, where you can explore
       our diverse selection of coding courses tailored to suit learners of all
-      levels and interests. Below, you'll find a comprehensive table listing our
-      featured courses in HTML, Java, C#, and PHP, along with brief descriptions
-      and key details to help you make an informed decision about which course is right for you.</h4>
-      <table  style="width:70%; table-align:center;">
+      levels and interests.<br> Below, you'll find a comprehensive table listing our
+      featured courses in<br> HTML, Java, C#, and PHP,<br> along with brief descriptions
+      and key details to help you make an informed decision about which course is right for you.</p>
+	<br><br>
+      <table style="padding: 15px; text-align: center; width:70%; table-align:center; font-family:calibri; margin-left: auto; margin-right: auto;">
         <tr>
           <th>Course Name</th>
-          <th>Descriptiom</th>
+          <th>Description</th>
           <th>Instructor</th>
           <th>Duration</th>
         </tr>
@@ -36,7 +187,7 @@
         </tr>
         <tr>
           <td>Java Programming Mastery</td>
-          <td>Dive into the world of Java programming and discover its power and versatility. From building desktop applications to developing Android apps,	this course covers it all.</td>
+          <td>Dive into the world of Java programming and discover its power and versatility.<br> From building desktop applications to developing Android apps,	this course covers it all.</td>
           <td>Sarah Johnson</td>
           <td>6 weeks</td>
         </tr>
@@ -53,16 +204,42 @@
           <td>5 weeks</td>
         </tr>
       </table>
-      <h4 style="font-family:calibri;">Each course is led by an experienced instructor who is dedicated to helping
-        you succeed. Whether you're a complete beginner or a seasoned coder looking to expand
-        your skill set, our courses offer a structured and supportive learning environment
-        where you can grow and thrive. So why wait? Enroll in a course today and take the first step towards mastering the art of coding.</h4>
-    <footer id="footer" class="wrapper style1-alt">
-      <div class="inner">
-        <ul>
-          <li>&copy; Untitled. All rights reserved.</li><li>Design: JTSM Software</li>
-        </ul>
-      </div>
-    </footer>
+      <br><br>
+      <p style="font-family:calibri; font-size:20px; text-align:center;">Each course is led by an experienced instructor who is dedicated to helping
+        you succeed.<br> Whether you're a complete beginner or a seasoned coder looking to expand
+        your skill set,<br> our courses offer a structured and supportive learning environment
+        where you can grow and thrive.<br><b> So why wait?</b><br> Enroll in a course today and take the first step towards mastering the art of coding.</p>
+	<br><br>
+<div class="container">
+<div class="card">
+	<div class="registration-form-container">
+    		<h2 style="font-family:calibri;text-align:left;">Enrollment</h2>
+    		<div class="registration-form" style="font-family:calibri;text-align:left; color:#333a;">
+        		<form action="submit_form.php" method="post" style="text-align:left; color:#333a;">
+            			<input type="text" name="name" placeholder="Name"><br>
+				<input type="email" name="email" placeholder="Email"><br>
+            			<label for="cars">Course: </label>
+					<select id="Course" name="Course" style="text-align:left; color:#333a; background-color:white; width:50%;">
+  						<option value="Course1">HTML Mastery</option>
+  						<option value="Course2">Java Programming Mastery</option>
+  						<option value="Course3">C# Essentials</option>
+  						<option value="Course4">PHP for Web Development</option>
+					</select> 
+            			<input type="submit" value="Enroll">
+        		</form>
+    		</div>
+	</div>
+</div>
+<div class="card">
+ <img src="../images/courses1.jpg" alt="image1" style="height:400px; width:600px; border-radius:5px;"> 
+</div>
+</div>
+<br><br>
+<footer id="footer">
+    <div class="inner">
+        <p style="color: #fff;">&copy; Untitled. All rights reserved.</p>
+        <p style="color: #fff;">Design: JTSM Software</p>
+    </div>
+</footer>
     </body>
 </html>
