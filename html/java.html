@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CodeBliss Learning/Java Programming Mastery</title>
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <style media="screen">
+        .topnav {
+            overflow: hidden;
+            background-color: #fffffa;
+            font-family: calibri;
+        }
+
+        .topnav a {
+            float: left;
+            font-size:18px;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 10px 14px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            background-color: lighblue;
+            font-family: calibri;
+        }
+
+        #footer {
+            background-color: #333f;
+            padding: 5px;
+            font-family: calibri;
+        }
+
+        .inner {
+            font-family: calibri;
+            color: white;
+            text-align: center;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        header {
+            background-image: url('../images/java1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 40%;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 45%;
+            font-size: 15px;
+            background-color: #fff;
+            padding: 30px;
+            margin: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+	.tablecard {
+    	    width: 70%;
+    	    padding: 20px;
+    	    border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+            margin: 0 auto;
+	}
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+		padding:10px;
+		font-size:20px;
+	}
+        .register-button {
+            position: center;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #333;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .register-button:hover {
+            background-color: white;
+        }
+	.registration-form-container {
+            text-align: left;
+            margin-top: 5px;
+	    width:100%;
+	    text-align: center; 
+        }
+
+        .registration-form {
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 5%;
+	    width: 90%;
+	    font-family:calibri;
+	    font-size: 18px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="submit"],
+        .registration-form select {
+            width: 85%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            font-size: 16px;
+        }
+
+        .registration-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .registration-form input[type="submit"]:hover {
+            background-color: #fff;
+	    color: #333;
+        }
+	.card1 {
+    		width: 20%;
+    		font-size: 15px;
+   		background-color: #fff;
+    		padding: 30px;
+   		margin: 50px;
+    		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    		border-radius: 8px;
+    		text-align: center;
+   		overflow: hidden; /* Ensures the content does not overflow */
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: space-between;
+	}
+        
+        .card1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .card1-image img {
+    		width: 70%;
+    		height: 150px;
+    		border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+	}
+	#course-catalog{
+	   text-align: center;
+	   font-family:calibri; 
+	}
+	.container {
+            display: flex;
+            justify-content: center;
+        }
+	P{
+	   font-size:20px; 
+	   text-align: center; 
+	   font-family:calibri;
+	}
+	h2{
+		font-size:25px; 
+		text-align: center; 
+		font-family:calibri;"
+	}
+    </style>
+</head>
+<body>
+<!--top navigation bar-->
+<div class="topnav" style="color:#333a;">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</div>
+<!--header-->
+<header>
+    <div style="text-align: center;">
+        <p style="font-family:calibri; font-size:20px;">---"Unlock Your Coding Potential with CodeBliss Learning"---</p>
+	<h3 style="font-family:calibri; font-size:80px;">Java Programming Mastery</h3>
+    </div>
+</header>
+<br>
+    
+    <section id="course-catalog">
+        <h2 style="font-size:35px;">Course Catalog</h2>
+        <p>Explore our coding courses below:</p>
+        <div class="course">
+            <h3 style="font-size:25px;">Java Programming Mastery</h3>
+            <p style="font-size:25px;"><strong>Duration:</strong> 12 weeks</p>
+            <p style="font-size:20px;"><strong>Syllabus:<br></strong>Introduction to Java, Object-Oriented Programming, Data Structures, Algorithms, GUI Development, Database Connectivity</p>
+            <p style="font-size:25px;"><strong>Learning Objectives:</strong></p>
+            <p style="font-size:20px;"> Master core Java concepts and build real-world applications</p>
+            <p style="font-size:25px;"><strong>Prerequisites:</P>
+		<p style="font-size:20px;"></strong> Basic understanding of programming concepts recommended.</p>
+        </div>
+    </section>
+
+    <section id="curriculum-details">
+        <h2>Curriculum Details</h2>
+        <p>Learn more about what each course covers:</p>
+        <p style="font-size:15px;">Introduction to Java Syntax and Basics<br>
+            Object-Oriented Programming Principles<br>
+            Data Structures and Algorithms<br>
+            Exception Handling and Error Management<br>
+            File Input/Output Operations<br>
+            GUI Development with JavaFX<br>
+            Database Connectivity and JDBC</p>
+        <p style="font-size:25px;"><strong>Prerequisites:</strong> Basic understanding of programming concepts recommended</p>
+        <p>The curriculum integrates hands-on projects and coding exercises to reinforce learning and practical skills.</p>
+    </section>
+
+    <p style="font-size:20px; text-align: center; font-family:calibri;"><strong>Instructor Profiles</strong></p>
+<p style="font-size:20px; text-align: center; font-family:calibri;">Meet our expert instructors:</p>
+<div class="container">
+<div class="card1">
+	<div class="card1-image">
+		<img src="../images/james.jpg" alt="Jamesane">
+		<h3 style="font-size:25px; text-align: center; font-family:calibri;">Mr.James</h3>
+            	<p><strong>Expertise:</strong> 10+ years of experience in Java development</p>
+            	<p><strong>Qualifications:</strong> Bachelor's degree in Computer Science</p>
+            	<p><strong>Experience:</strong> Worked at Microsoft</p>
+	</div>
+</div>
+<div class="card1">
+	<div class="card1-image">
+		<img src="../images/andrew.jpg" alt="andrew">
+		<h3 style="font-size:25px; text-align: center; font-family:calibri;">Mr.Andrew</h3>
+            	<p><strong>Expertise:</strong> 5+ years of experience in Java development</p>
+            	<p><strong>Qualifications:</strong> Bachelor's degree in Software Engineering</p>
+            	<p><strong>Experience:</strong> Worked at Google</p>
+	</div>
+</div>
+</div>
+<h2>Learning Platform</h2>
+<p>Discover our online learning platform:</p>
+<p>Our platform offers interactive video lectures, coding exercises, and quizzes to reinforce learning. Students can access course materials anytime, anywhere.</p>
+
+<h2>Student Testimonials</h2>
+        <p>Read what our students have to say:</p>
+	<div class="container">
+	<div class="card1">
+	<div class="card1-image">
+		<blockquote>
+		<p style="font-size: 15px;">"The Java course provided by this bootcamp was fantastic! I learned so much and was able to apply my knowledge to real projects. Highly recommend it!"</p>
+		<h3 style="font-size:20px; text-align: center; font-family:calibri;">-William D..</h3>
+		</blockquote>	
+	</div>
+</div>
+	<div class="card1">
+	<div class="card1-image">
+		<blockquote>
+		<p style="font-size: 15px;">"I landed a job as a data analyst after completing the data science course. Highly recommend!"</p>
+		<h3 style="font-size:20px; text-align: center; font-family:calibri;">- Sarah L..</h3>
+		</blockquote>	
+	</div>
+</div>
+</div>
+    
+    <section id="pricing-payment">
+        <h2>Pricing and Payment Options</h2>
+        <p>Find out about our pricing and payment plans:</p>
+        <p>Tuition for each course is<b> $1000</b>. We offer flexible payment plans and financing options to make learning accessible to everyone.</p>
+    </section>
+<div class="container">
+<div class="card">
+	<div class="registration-form-container">
+    		<h2 style="font-family:calibri;text-align:left;">Enrollment</h2><br><br>
+    		<div class="registration-form" style="font-family:calibri;text-align:left; color:#333a;">
+        		<form action="submit_form.php" method="post" style="text-align:left; color:#333a;">
+            			<input type="text" name="name" placeholder="Name"><br>
+				<input type="email" name="email" placeholder="Email"><br>
+            			<label for="cars">Course: </label>
+					<select id="Course" name="Course" style="text-align:left; color:#333a; background-color:white; width:50%;">
+  						<option value="Course1">HTML Mastery</option>
+  						<option value="Course2">Java Programming Mastery</option>
+  						<option value="Course3">C# Essentials</option>
+  						<option value="Course4">PHP for Web Development</option>
+					</select> 
+            			<input type="submit" value="Enroll">
+        		</form>
+    		</div>
+	</div>
+</div>
+</div>   
+    <section id="faq">
+        <h2>FAQ Section</h2>
+        <p>Got questions? Check out our FAQs:</p>
+	<div class="container">
+	<div class="card1">
+	<div class="card1-image">
+		<ul>
+            		<li style="text-align:left; font-family:calibri;"><b>Q: Is any prior programming experience required for the Java course?</b></li>
+            		<p style="text-align:left; font-size:15px;"><strong>A:</strong> No, the Java course is designed for beginners with no prior programming experience.</li>
+		</ul>
+	</div>
+</div>
+	<div class="card1">
+	<div class="card1-image">
+		<ul>
+            		<li style="text-align:left; font-family:calibri;"><b>Q: Will I receive a certificate upon completion of the course?</b></li>
+            		<p style="text-align:left; font-size:15px;"><strong>A:</strong> Yes, students who successfully complete the Java course will receive a certificate of completion.</p>
+		</ul>
+	</div>
+</div>
+</div>
+    
+    <footer id="footer">
+    <div class="inner">
+    <section id="contact-information">
+        <h2>Contact Information</h2>
+        <p>Get in touch with us:</p>
+            <p style="font-size:15px;">Email: info@onlinecodingbootcamp.com</p>
+            <p style="font-size:15px;">Phone: 123-456-7890</p>
+            <p style="font-size:15px;">Address: 123 Main Street, Anytown, USA</p>
+    </section>
+        <p style="color: #fff;  font-size:15px;">&copy; Untitled. All rights reserved.</p>
+        <p style="color: #fff;  font-size:15px;">Design: JTSM Software</p>
+    </div>
+</footer>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>CodeBliss Learning</title>
+    <title>CodeBliss Learning/HTML Mastery</title>
     <link rel="icon" href="../images/icon.png" type="image/x-icon">
     <style media="screen">
         .topnav {
@@ -16,7 +16,7 @@
             display: block;
             color: #333;
             text-align: center;
-            padding: 12px 14px;
+            padding: 10px 14px;
             text-decoration: none;
         }
 
@@ -52,7 +52,7 @@
             background-image: url('../images/courses.jpg');
             background-size: cover;
             background-position: center;
-            height: 300px;
+            height: 40%;
             text-align: center;
             color: white;
             padding: 20px;
@@ -68,13 +68,27 @@
             width: 45%;
             font-size: 15px;
             background-color: #fff;
-            padding: 20px;
-            margin: 10px;
+            padding: 30px;
+            margin: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             text-align: center;
         }
-
+	.tablecard {
+    	    width: 70%;
+    	    padding: 20px;
+    	    border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+            margin: 0 auto;
+	}
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+		padding:10px;
+		font-size:20px;
+	}
         .register-button {
             position: center;
             top: 20px;
@@ -94,7 +108,8 @@
 	.registration-form-container {
             text-align: left;
             margin-top: 5px;
-	    width:1000px;
+	    width:100%;
+	    text-align: center; 
         }
 
         .registration-form {
@@ -102,8 +117,8 @@
             text-align: center;
             border: 1px solid #ccc;
             border-radius: 8px;
-            padding: 50px;
-	    width: 50%;
+            padding: 5%;
+	    width: 90%;
 	    font-family:calibri;
 	    font-size: 18px;
         }
@@ -131,22 +146,51 @@
 	    color: #333;
         }
 	.card1 {
-            width: 5%;
-            font-size: 15px;
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            text-align: center;
-        }
-	table, th, td {
-  	    border: 1px solid white;
-  	    border-collapse: collapse;
-	    font-size: 20px;
+    		width: 25%;
+		height: 10%;
+    		font-size: 15px;
+   		background-color: #fff;
+    		padding: 20px;
+   		margin: 50px;
+    		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    		border-radius: 8px;
+    		text-align: center;
+   		overflow: hidden; /* Ensures the content does not overflow */
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: space-between;
 	}
-	th, td {
-            background-color: #B2BEB5;
+        
+        .card1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .card1-image img {
+    		width: 100%;
+            	height: auto;
+    		border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+	}
+	.card1:hover {
+            transform: translateY(-5px);
+        }
+	#course-catalog{
+	   text-align: center;
+	   font-family:calibri; 
+	}
+	.container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card1-content {
+            padding: 20px;
+        }
+	P{
+	   font-size:20px; 
+	   text-align: center; 
+	   font-family:calibri;
 	}
     </style>
 </head>
@@ -163,16 +207,19 @@
 <header>
     <div style="text-align: center;">
         <p style="font-family:calibri; font-size:20px;">---"Unlock Your Coding Potential with CodeBliss Learning"---</p>
-	<h3 style="font-family:calibri; font-size:60px;">Courses</h3>
+	<h3 style="font-family:calibri; font-size:80px;">Courses</h3>
     </div>
 </header>
+<br><br>
     <p style="font-family:calibri; font-size:20px; text-align:center;">Welcome to our Courses page, where you can explore
       our diverse selection of coding courses tailored to suit learners of all
       levels and interests.<br> Below, you'll find a comprehensive table listing our
       featured courses in<br> HTML, Java, C#, and PHP,<br> along with brief descriptions
       and key details to help you make an informed decision about which course is right for you.</p>
-	<br><br>
-      <table style="padding: 15px; text-align: center; width:70%; table-align:center; font-family:calibri; margin-left: auto; margin-right: auto;">
+	<br>
+<div class="tablecard">
+<br>
+      <table style="padding: 15px; text-align: center; width:80%; table-align:center; font-family:calibri; margin-left: auto; margin-right: auto;">
         <tr>
           <th>Course Name</th>
           <th>Description</th>
@@ -204,16 +251,61 @@
           <td>5 weeks</td>
         </tr>
       </table>
+</div>
       <br><br>
       <p style="font-family:calibri; font-size:20px; text-align:center;">Each course is led by an experienced instructor who is dedicated to helping
         you succeed.<br> Whether you're a complete beginner or a seasoned coder looking to expand
         your skill set,<br> our courses offer a structured and supportive learning environment
-        where you can grow and thrive.<br><b> So why wait?</b><br> Enroll in a course today and take the first step towards mastering the art of coding.</p>
-	<br><br>
+        where you can grow and thrive.<br><br><span style="font-size: 24px;"<b>So why wait?</b></span><br><br><i>Enroll in a course today and take the first step towards mastering the art of coding.</i></p>
+
+<h3 style="font-family:calibri; text-align:center; font-size:40px;">Courses</h3>
+<div class="container">
+<div class="card1">
+<a href="html.html">
+            <div class="card1-image">
+                <img src="../images/html.jpg" alt="HTML Mastery">
+            </div>
+            <div class="card1-content">
+                <h3 style="font-family:calibri; text-align:center;">HTML Mastery</h3>
+            </div>
+        </a>
+ </div>
+<div class="card1">
+ <a href="java.html">
+            <div class="card1-image">
+                <img src="../images/java.jpg" alt="Java Programming Mastery">
+            </div>
+            <div class="card1-content">
+                <h3 style="font-family:calibri; text-align:center;">Java Programming Mastery</h3>
+            </div>
+        </a>
+</div>
+<div class="card1">
+ <a href="c.html">
+            <div class="card1-image">
+                <img src="../images/c.jpg" alt="C# Essentials">
+            </div>
+            <div class="card1-content">
+                <h3 style="font-family:calibri; text-align:center;">C# Essentials</h3>
+            </div>
+        </a>
+ </div>
+<div class="card1">
+ <a href="php.html">
+            <div class="card1-image">
+                <img src="../images/php.jpg" alt="PHP for Web Development">
+            </div>
+            <div class="card1-content">
+                <h3 style="font-family:calibri; text-align:center;">PHP for Web Development</h3>
+            </div>
+        </a>
+ </div>
+</div>
+<br>
 <div class="container">
 <div class="card">
 	<div class="registration-form-container">
-    		<h2 style="font-family:calibri;text-align:left;">Enrollment</h2>
+    		<h2 style="font-family:calibri;text-align:left;">Enrollment</h2><br><br>
     		<div class="registration-form" style="font-family:calibri;text-align:left; color:#333a;">
         		<form action="submit_form.php" method="post" style="text-align:left; color:#333a;">
             			<input type="text" name="name" placeholder="Name"><br>
@@ -231,14 +323,21 @@
 	</div>
 </div>
 <div class="card">
- <img src="../images/courses1.jpg" alt="image1" style="height:400px; width:600px; border-radius:5px;"> 
+ <img src="../images/courses1.jpg" alt="image1" style="height:100%; width:100%; border-radius:5px;"> 
 </div>
 </div>
-<br><br>
-<footer id="footer">
+<br>
+    <footer id="footer">
     <div class="inner">
-        <p style="color: #fff;">&copy; Untitled. All rights reserved.</p>
-        <p style="color: #fff;">Design: JTSM Software</p>
+    <section id="contact-information">
+        <h2>Contact Information</h2>
+        <p>Get in touch with us:</p>
+            <p style="font-size:15px;">Email: info@onlinecodingbootcamp.com</p>
+            <p style="font-size:15px;">Phone: 123-456-7890</p>
+            <p style="font-size:15px;">Address: 123 Main Street, Anytown, USA</p>
+    </section>
+        <p style="color: #fff;  font-size:15px;">&copy; Untitled. All rights reserved.</p>
+        <p style="color: #fff;  font-size:15px;">Design: JTSM Software</p>
     </div>
 </footer>
     </body>

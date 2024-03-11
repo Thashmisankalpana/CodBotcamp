@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CodeBliss Learning/PHP for Web Development</title>
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <style media="screen">
+                .topnav {
+            overflow: hidden;
+            background-color: #fffffa;
+            font-family: calibri;
+        }
+
+        .topnav a {
+            float: left;
+            font-size:18px;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 10px 14px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            background-color: lighblue;
+            font-family: calibri;
+        }
+
+        #footer {
+            background-color: #333f;
+            padding: 5px;
+            font-family: calibri;
+        }
+
+        .inner {
+            font-family: calibri;
+            color: white;
+            text-align: center;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+
+        header {
+            background-image: url('../images/php1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 40%;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 45%;
+            font-size: 15px;
+            background-color: #fff;
+            padding: 30px;
+            margin: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+	.tablecard {
+    	    width: 70%;
+    	    padding: 20px;
+    	    border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            text-align: center;
+            margin: 0 auto;
+	}
+	table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+		padding:10px;
+		font-size:20px;
+	}
+        .register-button {
+            position: center;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #333;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .register-button:hover {
+            background-color: white;
+        }
+	.registration-form-container {
+            text-align: left;
+            margin-top: 5px;
+	    width:100%;
+	    text-align: center; 
+        }
+
+        .registration-form {
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 5%;
+	    width: 90%;
+	    font-family:calibri;
+	    font-size: 18px;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="submit"],
+        .registration-form select {
+            width: 85%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            font-size: 16px;
+        }
+
+        .registration-form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .registration-form input[type="submit"]:hover {
+            background-color: #fff;
+	    color: #333;
+        }
+	.card1 {
+    		width: 20%;
+    		font-size: 15px;
+   		background-color: #fff;
+    		padding: 30px;
+   		margin: 50px;
+    		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    		border-radius: 8px;
+    		text-align: center;
+   		overflow: hidden; /* Ensures the content does not overflow */
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: space-between;
+	}
+        
+        .card1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .card1-image img {
+    		width: 70%;
+    		height: 150px;
+    		border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
+	}
+	#course-catalog{
+	   text-align: center;
+	   font-family:calibri; 
+	}
+	.container {
+            display: flex;
+            justify-content: center;
+        }
+	P{
+	   font-size:20px; 
+	   text-align: center; 
+	   font-family:calibri;
+	}
+	h2{
+		font-size:25px; 
+		text-align: center; 
+		font-family:calibri;"
+	}
+    </style>
+</head>
+<body>
+<!--top navigation bar-->
+<div class="topnav" style="color:#333a;">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="community.html">Community</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</div>
+<!--header-->
+<header>
+    <div style="text-align: center;">
+        <p style="font-family:calibri; font-size:20px;">---"Unlock Your Coding Potential with CodeBliss Learning"---</p>
+	<h3 style="font-family:calibri; font-size:80px;">PHP for Web Development</h3>
+    </div>
+</header>
+<br>
+    
+    <section id="course-catalog">
+        <h2 style="font-size:35px;">Course Catalog</h2>
+        <p>Explore our coding courses below:</p>
+        <div class="course">
+            <h3 style="font-size:25px;">PHP for Web Development</h3>
+            <p style="font-size:25px;"><strong>Duration:</strong> 20 weeks</p>
+            <p style="font-size:20px;"><strong>Syllabus:<br></strong><b>PHP Fundamentals Course- </b>Introduction to PHP syntax, variables, control structures, functions, arrays, and form handling.(8 weeks)<br>
+		<b>Advanced php Development:- </b>Object-oriented programming in PHP, database integration with MySQL, authentication and security, and building RESTful APIs.(12 weeks)</p>
+            <p style="font-size:25px;"><strong>Learning Objectives:</strong></p>
+            <p style="font-size:20px;"> Design, develop, and deploy dynamic and interactive web applications using PHP, HTML, CSS, and JavaScript.br
+                <br>Create database-driven websites, implement user authentication and authorization, handle form submissions, and troubleshoot common PHP errors.
+                <br>Emphasis on practical application and problem-solving in real-world PHP development projects.</p>
+            <p style="font-size:25px;"><strong>Prerequisites:</P>
+	<p style="font-size:20px;"></strong> Familiarity with basic web development concepts such as HTML, CSS, and JavaScript is recommended.
+                <br>Prior experience with programming languages like Python, JavaScript, or Java is beneficial.
+                <br>Exposure to server-side technologies or databases (e.g., SQL) enhances the learning experience.
+		<br>Suitable for beginners and intermediate learners in PHP web development.</p>
+	    <p style="font-size:25px;"><strong>Additional Resources:</P>
+	<p style="font-size:20px;"></strong>Relevant textbooks like "PHP and MySQL Web Development" by Luke Welling and Laura Thomson.
+                <br>Online tutorials from platforms like Codecademy or Udemy.
+		<br>Documentation from PHP.net.
+                <br>Coding exercises from sites like LeetCode or HackerRank.
+		<br>Encouragement to engage with online communities, forums, and developer networks for support and collaboration.</p>
+        </div>
+    </section>
+    <p style="font-size:25px; text-align: center; font-family:calibri;"><strong>Instructor Profiles</strong></p>
+<p style="font-size:20px; text-align: center; font-family:calibri;">Meet our expert instructors:</p>
+<div class="container">
+<div class="card1">
+	<div class="card1-image">
+		<img src="../images/wiliam.jpg" alt="wiliam">
+		<h3 style="font-size:25px; text-align: center; font-family:calibri;">Mr.Wiliam Johnson</h3>
+            	<p><strong>Expertise:</strong> over 10 years of experience in C# development</p>
+            	<p><strong>Qualifications:</strong> Bachelor's degree in Software Engineering</p>
+            	<p><strong>Experience:</strong> Microsoft Certified Professional with a passion for teaching C# to aspiring developers.</p>
+	</div>
+</div>
+<div class="card1">
+	<div class="card1-image">
+		<img src="../images/wilson.jpg" alt="Wilson">
+		<h3 style="font-size:25px; text-align: center; font-family:calibri;">Mr.Wilson</h3>
+            	<p><strong>Expertise:</strong> 12+ years of experience in C# development</p>
+            	<p><strong>Qualifications:</strong> Bachelor's degree in Software Engineering</p>
+            	<p><strong>Experience:</strong>Worked at Google</p>
+	</div>
+</div>
+</div>
+<h2>Learning Platform</h2>
+<p>Discover our online learning platform:</p>
+<p>Our platform offers interactive video lectures, coding exercises, and quizzes to reinforce learning. Students can access course materials anytime, anywhere.</p>
+
+<h2>Student Testimonials</h2>
+        <p>Read what our students have to say:</p>
+	<div class="container">
+	<div class="card1">
+	<div class="card1-image">
+		<blockquote>
+			<p style="font-size: 15px;">"The PHP bootcamp provided me with the skills and confidence to pursue a career in web development. The instructors were knowledgeable and supportive, and the curriculum was comprehensive."</p>
+			<h3 style="font-size:20px; text-align: center; font-family:calibri;">- Emily S.</h3>
+		</blockquote>
+	</div>
+</div>
+	<div class="card1">
+	<div class="card1-image">
+		<blockquote>
+		<p style="font-size: 15px;">I highly recommend this PHP bootcamp to anyone looking to learn web development. The hands-on projects and personalized feedback helped me improve my coding skills significantly."</p>
+		<h3 style="font-size:20px; text-align: center; font-family:calibri;">- jaden M.</h3>
+		</blockquote>
+	</div>
+</div>
+</div>
+    
+    <section id="pricing-payment">
+        <h2>Pricing and Payment Options</h2>
+        <p>Find out about our pricing and payment plans:</p>
+        <p>PHP Fundamentals Course:<b> $500</b>. Advanced php Development: <b>$750</b>. We offer flexible payment plans and financing options to make learning accessible to everyone.</p>
+    </section>
+
+<div class="container">
+<div class="card">
+	<div class="registration-form-container">
+    		<h2 style="font-family:calibri;text-align:left;">Enrollment</h2><br><br>
+    		<div class="registration-form" style="font-family:calibri;text-align:left; color:#333a;">
+        		<form action="submit_form.php" method="post" style="text-align:left; color:#333a;">
+            			<input type="text" name="name" placeholder="Name"><br>
+				<input type="email" name="email" placeholder="Email"><br>
+            			<label for="cars">Course: </label>
+					<select id="Course" name="Course" style="text-align:left; color:#333a; background-color:white; width:50%;">
+  						<option value="Course1">HTML Mastery</option>
+  						<option value="Course2">Java Programming Mastery</option>
+  						<option value="Course3">C# Essentials</option>
+  						<option value="Course4">PHP for Web Development</option>
+					</select> 
+            			<input type="submit" value="Enroll">
+        		</form>
+    		</div>
+	</div>
+</div>
+</div>   
+ 
+    <section id="faq">
+        <h2>FAQ Section</h2>
+        <p>Got questions? Check out our FAQs:</p>
+	<div class="container">
+	<div class="card1">
+	<div class="card1-image">
+		<ul>
+            		<li style="text-align:left; font-family:calibri;"><b>Q: Are there any prerequisites for enrolling in the PHP courses?</b></li>
+            		<p style="text-align:left; font-size:15px;"><strong>A:</strong> No prior experience is required for the PHP Fundamentals course. However, familiarity with HTML and basic programming concepts is recommended for the Advanced PHP Development course.</li>
+		</ul>
+	</div>
+</div>
+	<div class="card1">
+	<div class="card1-image">
+		<ul>
+            		<li style="text-align:left; font-family:calibri;"><b>Q: Do you offer job placement assistance?</b></li>
+            		<p style="text-align:left; font-size:15px;"><strong>A:</strong> Yes, we provide job placement support to our graduates, including resume assistance, interview preparation, and access to job postings.</p>
+		</ul>
+	</div>
+</div>
+</div>
+    <footer id="footer">
+    <div class="inner">
+    <section id="contact-information">
+        <h2>Contact Information</h2>
+        <p>Get in touch with us:</p>
+            <p style="font-size:15px;">Email: info@onlinecodingbootcamp.com</p>
+            <p style="font-size:15px;">Phone: 123-456-7890</p>
+            <p style="font-size:15px;">Address: 123 Main Street, Anytown, USA</p>
+    </section>
+        <p style="color: #fff;  font-size:15px;">&copy; Untitled. All rights reserved.</p>
+        <p style="color: #fff;  font-size:15px;">Design: JTSM Software</p>
+    </div>
+</footer>
+    </body>
+</html>
