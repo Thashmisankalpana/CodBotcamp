@@ -5,15 +5,25 @@
     <link rel="icon" href="../images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <style>
-	header {
+        header {
             background-image: url('../images/php1.jpg');
             height: 40%;
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
     </style>
+    <script>
+        function validateEnrollmentForm() {
+            var name = document.getElementById["enrollmentForm"]["name"].value;
+            var email = document.getElementById["enrollmentForm"]["email"].value;
+            var course = document.getElementById["enrollmentForm"]["Course"].value;
+
+            if (name == "" || email == "" || course == "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            alert("Enrollment successful! We'll get in touch with you shortly.");
+            return true;
+        }
+    </script>
 </head>
 <body>
 <!--top navigation bar-->
@@ -28,7 +38,7 @@
 <header>
     <div style="text-align: center;">
         <p style="font-family:calibri; font-size:20px;">---"Unlock Your Coding Potential with CodeBliss Learning"---</p>
-	<h3 style="font-family:calibri; font-size:80px;">PHP for Web Development</h3>
+        <h3 style="font-family:calibri; font-size:80px;">PHP for Web Development</h3>
     </div>
 </header>
 <br>
@@ -116,7 +126,7 @@
 	<div class="registration-form-container">
     		<h2 style="font-family:calibri;text-align:left;">Enrollment</h2>
     		<div class="registration-form" style="font-family:calibri;text-align:left; color:#333a;">
-        		<form action="submit_form.php" method="post" style="text-align:left; color:#333a;">
+        		<form name="enrollmentForm" action="submit_form.php" method="post" onsubmit="return validateEnrollmentForm()" style="text-align:left; color:#333a;">
             			<input type="text" name="name" placeholder="Name"><br>
 				<input type="email" name="email" placeholder="Email"><br>
             			<label for="cars">Course: </label>
@@ -167,5 +177,5 @@
         <p style="color: #fff;  font-size:15px;">Design: JTSM Software</p>
     </div>
 </footer>
-    </body>
+</body>
 </html>

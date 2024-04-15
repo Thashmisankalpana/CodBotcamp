@@ -9,11 +9,23 @@
             background-image: url('../images/c1.jpg');
             height: 40%;
         }
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
     </style>
+    <script>
+        function validateEnrollmentForm() {
+            var name = document.getElementById["enrollmentForm"]["name"].value;
+            var email = document.getElementById["enrollmentForm"]["email"].value;
+            var course = document.getElementById["enrollmentForm"]["Course"].value;
+
+            if (name == "" || email == "" || course == "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+            // Form is valid, show confirmation
+            alert("Enrollment successful! We'll get in touch with you shortly.");
+            return true;
+        }
+    </script>
 </head>
 <body>
 <!--top navigation bar-->
@@ -43,8 +55,8 @@
 		<b>Advanced C# Development:- </b>Dive deeper into C# with topics like LINQ, asynchronous programming, and building scalable applications.(12 weeks)</p>
             <p style="font-size:25px;"><strong>Learning Objectives:</strong></p>
             <p style="font-size:20px;"> Master core Java concepts and build real-world applications</p>
-            <p style="font-size:25px;"><strong>Prerequisites:</P>
-	    <p style="font-size:20px;"></strong> Basic understanding of programming concepts recommended.</p>
+            <p style="font-size:25px;"><strong>Prerequisites:</strong></p>
+	    <p style="font-size:20px;"> Basic understanding of programming concepts recommended.</p>
         </div>
     </section>
 
@@ -119,7 +131,7 @@
 	<div class="registration-form-container">
     		<h2 style="font-family:calibri;text-align:left;">Enrollment</h2>
     		<div class="registration-form" style="font-family:calibri;text-align:left; color:#333a;">
-        		<form action="submit_form.php" method="post" style="text-align:left; color:#333a;">
+        		<form name="enrollmentForm" action="submit_form.php" method="post" onsubmit="return validateEnrollmentForm()" style="text-align:left; color:#333a;">
             			<input type="text" name="name" placeholder="Name"><br>
 				<input type="email" name="email" placeholder="Email"><br>
             			<label for="cars">Course: </label>

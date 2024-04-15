@@ -35,6 +35,22 @@
     background-color: #e4405f;
 }
     </style>
+    <script>
+        function validateContactForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name == "" || email == "" || message == "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+            // Form is valid, show confirmation
+            alert("Message sent successfully! We'll get in touch with you shortly.");
+            return true;
+        }
+    </script>
 </head>
 <body>
 <!--top navigation bar-->
@@ -58,7 +74,7 @@
     		<h2 style="font-size:30px; font-family:calibri;text-align:left;">Contact Form</h2>
         	<p style="text-align:left;">Use the form below to send us your inquiries or feedback:</p>
     		<div class="registration-form" style="font-family:calibri;text-align:left; color:#333a;">
-        		<form action="submit_form.php" method="post" style="text-align:left; color:#333a;">
+        		<form name="contactForm" action="submit_form.php" method="post" onsubmit="return validateContactForm()" style="text-align:left; color:#333a;">
 				<br>
             			<input type="text" id="name" name="name" placeholder="Name" required>
             			<input type="email" id="email" name="email" placeholder="Email" required>
